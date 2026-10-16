@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#240f2d">
+<title>Happy Birthday Dua ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #ff91c8;
+  --light: #ffe4f2;
+  --purple: #240f2d;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  font-family: Georgia, serif;
+  color: white;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at top, #71365e 0%, transparent 55%),
+    linear-gradient(145deg, #170c26, #451c42, #210e32);
+  overflow-x: hidden;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.music {
+  position: fixed;
+  top: 15px;
+  right: 14px;
+  z-index: 5;
+  padding: 11px 14px;
+  border: 1px solid #ffffff45;
+  border-radius: 30px;
+  background: #ffffff15;
+  color: white;
+  font: 13px Arial, sans-serif;
+  backdrop-filter: blur(8px);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 30px, 480px);
+  margin: auto;
+  padding: 75px 0 35px;
+}
+
+.eyebrow {
+  color: #ffc3e3;
+  font: 11px Arial, sans-serif;
+  letter-spacing: 4px;
+  line-height: 1.8;
+}
+
+h1 {
+  margin: 18px 0 12px;
+  color: #ffb6dc;
+  font-size: clamp(37px, 10vw, 54px);
+  line-height: 1.2;
+  text-shadow: 0 0 25px #ff69b480;
+}
+
+.subtitle {
+  color: #ffe8f4;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.gift {
+  margin: 22px 0 8px;
+  font-size: 90px;
+  filter: drop-shadow(0 0 20px #ff83ca66);
+  animation: bob 2s ease-in-out infinite;
+}
+
+.card {
+  margin-top: 25px;
+  padding: 26px 20px;
+  border: 1px solid #ffc5e84d;
+  border-radius: 24px;
+  background: #ffffff0c;
+  box-shadow: 0 15px 50px #09041440;
+  backdrop-filter: blur(12px);
+}
+
+button.primary {
+  width: 100%;
+  max-width: 310px;
+  padding: 16px 18px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 50px;
+  color: #431632;
+  background: linear-gradient(100deg, #ffb4d9, #ff7fb9);
+  font: bold 15px Arial, sans-serif;
+  box-shadow: 0 6px 25px #ff6fb544;
+  transition: transform .2s, box-shadow .2s;
+}
+
+button.primary:active {
+  transform: scale(.97);
+}
+
+button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.hint {
+  color: #e6c9e0;
+  font: 12px Arial, sans-serif;
+  margin-top: 16px;
+}
+
+#letter {
+  display: none;
+  margin-top: 25px;
+  padding: 26px 21px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #fff0f7, #f8d9ed);
+  color: #582546;
+  text-align: left;
+  box-shadow: 0 10px 35px #0003;
+  animation: appear .8s ease both;
+}
+
+#letter h2 {
+  text-align: center;
+  font-size: 27px;
+  color: #b33c7c;
+  margin: 0 0 20px;
+}
+
+#letter p {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.signature {
+  color: #b33c7c;
+  font-size: 20px !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.heart {
+  position: fixed;
+  z-index: 0;
+  bottom: -35px;
+  left: 0;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+  opacity: .8;
+}
+
+footer {
+  padding: 25px 0 10px;
+  color: #e9b9dc;
+  font-size: 12px;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) rotate(0);
+    opacity: .85;
+  }
+  to {
+    transform: translateY(-115vh) rotate(35deg);
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 380px) {
+  main { padding-top: 80px; }
+  .gift { font-size: 75px; }
+  .card { padding: 22px 15px; }
+  #letter { padding: 22px 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<button class="music" id="musicButton" type="button"
+        aria-pressed="false">
+  ♫ Play Music
+</button>
+
+<main>
+  <div class="eyebrow">✦ A LITTLE SURPRISE MADE WITH LOVE ✦</div>
+
+  <h1>Happy Birthday,<br>Dua! 💗</h1>
+
+  <p class="subtitle">
+    Today is a little more beautiful<br>
+    because it's all about you. ✨
+  </p>
+
+  <div class="gift" aria-hidden="true">🎁</div>
+
+  <section class="card">
+    <div style="font-size: 25px">💌</div>
+
+    <p class="subtitle">
+      I have something special to tell you...
+    </p>
+
+    <button class="primary" id="openButton" type="button">
+      Open Your Love Letter 💖
+    </button>
+
+    <p class="hint" id="hint">
+      A little gift for someone special
+    </p>
+  </section>
+
+  <section id="letter" aria-live="polite">
+    <h2>To My Special Dua 💕</h2>
+
+    <p>Dear Dua, ❤️</p>
+
+    <p>
+      Happy Birthday to someone truly special!
+      🥹💗 Today, I wish you a life full of
+      happiness, beautiful memories, success,
+      and countless reasons to smile.
+    </p>
+
+    <p>
+      May Allah always guide you, protect you,
+      bless you with peace, and help you achieve
+      every beautiful dream in your heart. 🤲🏻✨
+    </p>
+
+    <p>
+      I hope your days are filled with laughter,
+      your heart with happiness, and your future
+      with wonderful opportunities. Never forget
+      how special and appreciated you are.
+    </p>
+
+    <p>
+      If I could wish one thing for you, it would
+      be that life always gives you reasons to
+      smile, even on the days that feel difficult.
+      You deserve so much happiness. 🌷
+    </p>
+
+    <p class="signature">
+      Happy Birthday, Dua! 🎂<br>
+      Sending you lots of love ❤️
+    </p>
+
+    <div style="text-align:center;font-size:27px">
+      💗 💖 💗
+    </div>
+  </section>
+
+  <footer>
+    Made with love, just for Dua ✨
+  </footer>
+</main>
+
+<script>
+const openButton = document.getElementById("openButton");
+const letter = document.getElementById("letter");
+const hint = document.getElementById("hint");
+const musicButton = document.getElementById("musicButton");
+
+let opened = false;
+let audioContext = null;
+let musicTimer = null;
+let noteIndex = 0;
+
+const melody = [
+  523.25, 659.25, 783.99, 659.25,
+  587.33, 698.46, 880.00, 698.46,
+  523.25, 659.25, 783.99, 1046.5,
+  783.99, 659.25, 587.33, 523.25
+];
+
+function playNote(frequency) {
+  if (!audioContext || audioContext.state !== "running") return;
+
+  const now = audioContext.currentTime;
+  const oscillator = audioContext.createOscillator();
+  const volume = audioContext.createGain();
+
+  oscillator.type = "sine";
+  oscillator.frequency.setValueAtTime(frequency, now);
+
+  volume.gain.setValueAtTime(0.001, now);
+  volume.gain.linearRampToValueAtTime(0.06, now + 0.04);
+  volume.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
+
+  oscillator.connect(volume);
+  volume.connect(audioContext.destination);
+
+  oscillator.start(now);
+  oscillator.stop(now + 0.5);
+}
+
+async function startMusic() {
+  try {
+    const Audio = window.AudioContext || window.webkitAudioContext;
+
+    if (!Audio) {
+      alert("Audio is not supported by this browser.");
+      return;
+    }
+
+    if (!audioContext) audioContext = new Audio();
+
+    await audioContext.resume();
+
+    if (audioContext.state !== "running") return;
+
+    musicButton.textContent = "♫ Pause Music";
+    musicButton.setAttribute("aria-pressed", "true");
+
+    if (musicTimer) return;
+
+    playNote(melody[noteIndex]);
+    noteIndex = (noteIndex + 1) % melody.length;
+
+    musicTimer = setInterval(() => {
+      playNote(melody[noteIndex]);
+      noteIndex = (noteIndex + 1) % melody.length;
+    }, 480);
+  } catch (error) {
+    alert("Please try tapping the music button again.");
+  }
+}
+
+async function stopMusic() {
+  if (musicTimer) {
+    clearInterval(musicTimer);
+    musicTimer = null;
+  }
+
+  if (audioContext && audioContext.state === "running") {
+    await audioContext.suspend();
+  }
+
+  musicButton.textContent = "♫ Play Music";
+  musicButton.setAttribute("aria-pressed", "false");
+}
+
+musicButton.addEventListener("click", async () => {
+  if (musicTimer) {
+    await stopMusic();
+  } else {
+    await startMusic();
+  }
+});
+
+openButton.addEventListener("click", () => {
+  if (opened) return;
+
+  opened = true;
+  letter.style.display = "block";
+  hint.textContent = "A message from the heart 💗";
+  openButton.textContent = "Your Letter Is Open 💌";
+  openButton.disabled = true;
+  openButton.style.opacity = "0.8";
+
+  for (let i = 0; i < 28; i++) {
+    setTimeout(createHeart, i * 65);
+  }
+
+  letter.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
+
+function createHeart() {
+  const heart = document.createElement("span");
+
+  heart.className = "heart";
+  heart.textContent = [
+    "💗", "💖", "💕", "♥", "✨"
+  ][Math.floor(Math.random() * 5)];
+
+  heart.style.left = Math.random() * 95 + "vw";
+  heart.style.fontSize = (15 + Math.random() * 20) + "px";
+  heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 8500);
+}
+
+setInterval(() => {
+  if (Math.random() > 0.35) createHeart();
+}, 650);
+</script>
+
+</body>
+</html>
